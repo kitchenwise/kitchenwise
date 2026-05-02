@@ -839,28 +839,42 @@
             <h2 class="section-title">🛒 Trending Kitchen Deals on Amazon</h2>
             <p class="section-subtitle">These products update automatically with live prices and availability.</p>
 
-            <!-- 
-            ============================================
-            AMAZON NATIVE SHOPPING ADS — SETUP REQUIRED
-            ============================================
-            1. Log into Amazon Associates: https://affiliate-program.amazon.com/
-            2. Go to: Product Linking → Native Shopping Ads
-            3. Create a "Recommendation" or "Search" ad
-            4. Set category to "Home & Kitchen"
-            5. Copy the JavaScript code they give you
-            6. Paste it BELOW this comment, replacing the placeholder
-            ============================================
-            -->
-            <div class="ads-placeholder" id="amazon-ads-container">
-                <h3>🎯 Amazon Native Shopping Ads</h3>
-                <p>Auto-updating product carousel will appear here once you add your Amazon Associates Native Shopping Ads code.</p>
-                <p style="font-size: 0.8rem; margin-top: 0.5rem;">This displays live products, prices, and images automatically. Zero maintenance required.</p>
-                <a href="https://affiliate-program.amazon.com/home/productlinks/nativeshoppingads" target="_blank" class="setup-btn">Set Up Amazon Native Ads →</a>
+            <!-- Live Amazon Product Grid -->
+            <div class="live-products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+
+                <a href="https://www.amazon.com/s?k=ninja+air+fryer&tag=kitchenwi20-20" target="_blank" rel="nofollow sponsored" class="live-product-card" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; text-align: center; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🍟</div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">Air Fryers</h4>
+                    <p style="color: #718096; font-size: 0.85rem;">Starting at $79.99</p>
+                    <span style="display: inline-block; margin-top: 0.75rem; background: #ff6b35; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Shop Now →</span>
+                </a>
+
+                <a href="https://www.amazon.com/s?k=electric+kettle&tag=kitchenwi20-20" target="_blank" rel="nofollow sponsored" class="live-product-card" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; text-align: center; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">☕</div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">Electric Kettles</h4>
+                    <p style="color: #718096; font-size: 0.85rem;">Starting at $39.99</p>
+                    <span style="display: inline-block; margin-top: 0.75rem; background: #ff6b35; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Shop Now →</span>
+                </a>
+
+                <a href="https://www.amazon.com/s?k=instant+pot&tag=kitchenwi20-20" target="_blank" rel="nofollow sponsored" class="live-product-card" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; text-align: center; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🍲</div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">Instant Pots</h4>
+                    <p style="color: #718096; font-size: 0.85rem;">Starting at $69.99</p>
+                    <span style="display: inline-block; margin-top: 0.75rem; background: #ff6b35; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Shop Now →</span>
+                </a>
+
+                <a href="https://www.amazon.com/s?k=kitchen+blender&tag=kitchenwi20-20" target="_blank" rel="nofollow sponsored" class="live-product-card" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; text-align: center; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🥤</div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">Blenders</h4>
+                    <p style="color: #718096; font-size: 0.85rem;">Starting at $49.99</p>
+                    <span style="display: inline-block; margin-top: 0.75rem; background: #ff6b35; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Shop Now →</span>
+                </a>
+
             </div>
 
-            <!-- EXAMPLE: Paste your Amazon Native Shopping Ads script here
-            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=YOUR_AD_INSTANCE_ID"></script>
-            -->
+            <p style="text-align: center; color: var(--text-light); font-size: 0.8rem; margin-top: 1.5rem;">
+                🔗 All links use your Amazon Associates tracking ID. You earn commission on every purchase made within 24 hours of clicking.
+            </p>
         </section>
 
         <!-- Product Cards -->
