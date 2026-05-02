@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KitchenWise — Smart Reviews for Smarter Kitchens | 2026</title>
+<meta name="description" content="Honest, expert-tested kitchen gadget reviews. Find the best air fryers, kettles, blenders & more. We earn from qualifying Amazon purchases.">
+<meta name="keywords" content="kitchen gadgets, air fryer reviews, best electric kettle, kitchen tools 2026, Amazon deals">
+<meta name="author" content="KitchenWise">
+<meta property="og:title" content="KitchenWise — Smart Reviews for Smarter Kitchens">
+<meta property="og:description" content="Expert-tested kitchen gadget reviews with the best Amazon deals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kitchenwise.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kitchenwise.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #ff6b35;
+  --primary-dark: #e55a2b;
+  --secondary: #1a1a2e;
+  --accent: #f7c59f;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --text: #2d2d2d;
+  --text-light: #6b6b6b;
+  --success: #22c55e;
+  --gold: #f59e0b;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  --shadow-glow: 0 0 40px rgba(255,107,53,0.15);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== ANIMATED HERO BACKGROUND ===== */
+.hero-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #faf9f7 0%, #f5f0eb 50%, #faf9f7 100%);
+  overflow: hidden;
+}
+.hero-bg .orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 20s infinite ease-in-out;
+}
+.orb-1 { width: 400px; height: 400px; background: var(--primary); top: -100px; left: -100px; animation-delay: 0s; }
+.orb-2 { width: 300px; height: 300px; background: var(--accent); top: 50%; right: -100px; animation-delay: -5s; }
+.orb-3 { width: 250px; height: 250px; background: #ffd93d; bottom: -50px; left: 30%; animation-delay: -10s; }
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+/* ===== PARTICLES ===== */
+#particles {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.particle {
+  position: absolute;
+  width: 4px; height: 4px;
+  background: var(--primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: particle-rise 15s infinite linear;
+}
+@keyframes particle-rise {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left { transform: translateX(-60px); }
+.reveal-right { transform: translateX(60px); }
+.reveal-left.active, .reveal-right.active { transform: translateX(0); }
+.reveal-scale { transform: scale(0.8); }
+.reveal-scale.active { transform: scale(1); }
+
+/* ===== STICKY HEADER ===== */
+header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  z-index: 1000;
+  background: rgba(250,249,247,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+header.scrolled {
+  box-shadow: var(--shadow-lg);
+  background: rgba(250,249,247,0.95);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo span { color: var(--primary); }
+.logo-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  animation: pulse-glow 2s infinite;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,107,53,0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(255,107,53,0); }
+}
+nav { display: flex; gap: 2rem; align-items: center; }
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+nav a:hover { color: var(--primary); }
+nav a:hover::after { width: 100%; }
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+}
+.hero-content { max-width: 800px; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,107,53,0.1);
+  color: var(--primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+.hero-badge .live-dot {
+  width: 8px; height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+.hero h1 .gradient-text {
+  background: linear-gradient(135deg, var(--primary), #ff8c5a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  box-shadow: 0 10px 30px rgba(255,107,53,0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(255,107,53,0.4);
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+.btn-primary:hover::before { left: 100%; }
+.btn-secondary {
+  background: white;
+  color: var(--secondary);
+  border: 2px solid rgba(0,0,0,0.1);
+}
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* Floating stats */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  animation: fadeInUp 1s ease 0.8s both;
+}
+.stat-item { text-align: center; }
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  display: block;
+}
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== AD BANNER ===== */
+.ad-banner {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+.ad-slot {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border: 2px dashed #ced4da;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+.ad-slot::before {
+  content: 'ADVERTISEMENT';
+  position: absolute;
+  top: 8px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #adb5bd;
+  font-weight: 700;
+}
+
+/* ===== SECTIONS ===== */
+section { padding: 5rem 2rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.section-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== FEATURED PRODUCTS ===== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.product-card {
+  background: var(--card);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+.product-badge {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.product-image {
+  height: 250px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.product-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.05), transparent);
+}
+.product-content { padding: 1.5rem 2rem 2rem; }
+.product-content h3 {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.product-content .desc {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.stars { color: var(--gold); font-size: 1.1rem; }
+.rating-text { font-size: 0.85rem; color: var(--text-light); font-weight: 500; }
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.price .old {
+  font-size: 1rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+.product-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.feature-tag {
+  background: rgba(255,107,53,0.08);
+  color: var(--primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.btn-amazon {
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff9900, #ff8800);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255,153,0,0.3);
+}
+.btn-amazon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255,153,0,0.4);
+}
+
+/* ===== COUNTDOWN TIMER ===== */
+.countdown-section {
+  background: linear-gradient(135deg, var(--secondary), #16213e);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.countdown-section::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.countdown-content { position: relative; z-index: 1; }
+.countdown-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.countdown-section p { opacity: 0.8; margin-bottom: 2rem; }
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.countdown-item {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  min-width: 100px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.countdown-item .num {
+  font-size: 3rem;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+  color: var(--primary);
+}
+.countdown-item .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.comparison-section { background: white; }
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.comparison-table th {
+  background: var(--secondary);
+  color: white;
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: 600;
+}
+.comparison-table td {
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.comparison-table tr:hover td { background: rgba(255,107,53,0.03); }
+.comparison-table .winner { color: var(--success); font-weight: 700; }
+.comparison-table .product-name { font-weight: 700; color: var(--secondary); }
+.check { color: var(--success); font-size: 1.2rem; }
+.cross { color: #ef4444; font-size: 1.2rem; }
+
+/* ===== TRUST SECTION ===== */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.trust-card {
+  background: var(--card);
+  padding: 2.5rem;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.4s;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.trust-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+.trust-icon {
+  width: 70px; height: 70px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(255,107,53,0.3);
+}
+.trust-card h3 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.trust-card p { color: var(--text-light); font-size: 0.95rem; }
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.2;
+  line-height: 1;
+}
+.testimonial-text {
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.author-avatar {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.author-info h4 { font-size: 1rem; color: var(--secondary); }
+.author-info p { font-size: 0.85rem; color: var(--text-light); }
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+.newsletter-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+.newsletter h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.newsletter p { opacity: 0.9; margin-bottom: 2rem; }
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newsletter-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.newsletter-form .btn {
+  background: var(--secondary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.newsletter-form .btn:hover { background: #0f0f1a; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--secondary);
+  color: white;
+  padding: 4rem 2rem 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+.footer-col a {
+  display: block;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s;
+}
+.footer-col a:hover { color: var(--primary); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-bottom a { color: var(--primary); }
+
+/* ===== POPUP ===== */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.popup-overlay.show { display: flex; opacity: 1; }
+.popup {
+  background: white;
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  animation: popupIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: var(--shadow-lg);
+}
+@keyframes popupIn {
+  from { transform: scale(0.8) translateY(20px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+.popup-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.05);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+.popup-close:hover { background: rgba(0,0,0,0.1); }
+.popup h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.popup p { color: var(--text-light); margin-bottom: 1.5rem; }
+.popup .gift-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== FLOATING CTA ===== */
+.floating-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  animation: slideInRight 0.5s ease;
+}
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.floating-cta .btn {
+  box-shadow: 0 10px 30px rgba(255,107,53,0.4);
+  padding: 1rem 2rem;
+}
+
+/* ===== PROGRESS BAR ===== */
+.reading-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  z-index: 1001;
+  transition: width 0.1s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-inner { padding: 1rem; }
+  nav { display: none; }
+  .hero { padding: 7rem 1rem 3rem; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .products-grid { grid-template-columns: 1fr; }
+  .countdown { gap: 0.5rem; }
+  .countdown-item { min-width: 70px; padding: 1rem; }
+  .countdown-item .num { font-size: 2rem; }
+  .comparison-table { font-size: 0.85rem; }
+  .comparison-table th, .comparison-table td { padding: 0.8rem; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input { width: 100%; }
+}
+
+/* ===== SMOOTH SCROLLBAR ===== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+/* ===== LOADING ANIMATION ===== */
+.loader {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.loader.hidden { opacity: 0; visibility: hidden; }
+.loader-spinner {
+  width: 50px; height: 50px;
+  border: 3px solid rgba(255,107,53,0.2);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-spinner"></div>
+</div>
+
+<!-- READING PROGRESS -->
+<div class="reading-progress" id="progress"></div>
+
+<!-- BACKGROUND -->
+<div class="hero-bg">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div id="particles"></div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">⚡</div>
+      Kitchen<span>Wise</span>
+    </a>
+    <nav>
+      <a href="#products">Top Picks</a>
+      <a href="#compare">Compare</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#trust">Why Us</a>
+      <a href="#newsletter" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Get Deals</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="live-dot"></span>
+      Live Price Tracking Active
+    </div>
+    <h1>
+      Smart Reviews for<br>
+      <span class="gradient-text">Smarter Kitchens</span>
+    </h1>
+    <p>We test, compare, and recommend the best kitchen gadgets so you don't have to. Real reviews. Real savings. Real results.</p>
+    <div class="hero-cta">
+      <a href="#products" class="btn btn-primary">
+        🔥 See Today's Deals
+      </a>
+      <a href="#compare" class="btn btn-secondary">
+        📊 Compare Products
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-count="47">0</span>
+        <span class="stat-label">Products Tested</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="1200">0</span>
+        <span class="stat-label">Happy Readers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="98">0</span>
+        <span class="stat-label">% Would Recommend</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AD BANNER -->
+<div class="ad-banner reveal">
+  <div class="ad-slot">
+    <!-- Google AdSense Code Goes Here -->
+    <p>📢 <strong>Ad Space:</strong> Insert your Google AdSense code here to start earning from impressions & clicks.</p>
+    <p style="font-size:0.8rem; margin-top:0.5rem;">Recommended size: 728x90 or 970x90 (Responsive)</p>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>🔥 This Week's Top Picks</h2>
+      <p>Hand-selected by our kitchen experts after 40+ hours of hands-on testing. Updated weekly with the best Amazon deals.</p>
+    </div>
+    <div class="products-grid">
+
+      <!-- Product 1: Ninja Air Fryer -->
+      <div class="product-card reveal">
+        <div class="product-badge">#1 Best Seller</div>
+        <div class="product-image">🍟</div>
+        <div class="product-content">
+          <h3>Ninja Air Fryer Pro 4-in-1</h3>
+          <p class="desc">Crispy results with 75% less fat. 5-QT capacity, 4 cooking functions, dishwasher-safe parts.</p>
+          <div class="product-meta">
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.7/5 (12,400+ reviews)</span>
+            </div>
+            <div class="price"><span class="old">$129.99</span>$89.99</div>
+          </div>
+          <div class="product-features">
+            <span class="feature-tag">5-QT Capacity</span>
+            <span class="feature-tag">4 Functions</span>
+            <span class="feature-tag">Air Fry</span>
+            <span class="feature-tag">Roast</span>
+          </div>
+          <a href="https://www.amazon.com/dp/B0CS3V8M9H?tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
+            🛒 Check Price on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 2: Cuisinart Kettle -->
+      <div class="product-card reveal">
+        <div class="product-badge" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">Editor's Choice</div>
+        <div class="product-image">☕</div>
+        <div class="product-content">
+          <h3>Cuisinart PerfecTemp Electric Kettle</h3>
+          <p class="desc">1.7-liter, 6 preset temperatures, keep-warm mode, stainless steel with 360° swivel base.</p>
+          <div class="product-meta">
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.6/5 (28,000+ reviews)</span>
+            </div>
+            <div class="price"><span class="old">$129.95</span>$99.95</div>
+          </div>
+          <div class="product-features">
+            <span class="feature-tag">1.7L</span>
+            <span class="feature-tag">6 Presets</span>
+            <span class="feature-tag">Keep Warm</span>
+            <span class="feature-tag">Steel</span>
+          </div>
+          <a href="https://www.amazon.com/dp/B003KYSLNQ?tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
+            🛒 Check Price on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 3: Instant Pot -->
+      <div class="product-card reveal">
+        <div class="product-badge" style="background: linear-gradient(135deg, #10b981, #059669);">Best Value</div>
+        <div class="product-image">🍲</div>
+        <div class="product-content">
+          <h3>Instant Pot Duo 7-in-1</h3>
+          <p class="desc">Pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker & warmer.</p>
+          <div class="product-meta">
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8/5 (154,000+ reviews)</span>
+            </div>
+            <div class="price"><span class="old">$119.99</span>$79.99</div>
+          </div>
+          <div class="product-features">
+            <span class="feature-tag">7-in-1</span>
+            <span class="feature-tag">6-QT</span>
+            <span class="feature-tag">13 Programs</span>
+            <span class="feature-tag">Safe</span>
+          </div>
+          <a href="https://www.amazon.com/s?k=Instant+Pot+Duo+7-in-1&tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
+            🛒 Check Price on Amazon
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+  <div class="countdown-content">
+    <h2>⏰ Flash Sale Ends Soon</h2>
+    <p>These Amazon prices won't last. Grab your kitchen upgrade before midnight!</p>
+    <div class="countdown" id="countdown">
+      <div class="countdown-item">
+        <span class="num" id="hours">04</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span class="num" id="minutes">32</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span class="num" id="seconds">15</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <a href="#products" class="btn" style="background: white; color: var(--secondary);">
+      🛍️ Shop the Sale Now
+    </a>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="compare" class="comparison-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>📊 Side-by-Side Comparison</h2>
+      <p>See how our top picks stack up against each other. We compare what actually matters.</p>
+    </div>
+    <div class="reveal">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Ninja Air Fryer</th>
+            <th>Cuisinart Kettle</th>
+            <th>Instant Pot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product-name">Price</td>
+            <td><strong style="color:var(--primary)">$89.99</strong></td>
+            <td><strong style="color:var(--primary)">$99.95</strong></td>
+            <td><strong style="color:var(--primary)">$79.99</strong></td>
+          </tr>
+          <tr>
+            <td class="product-name">Rating</td>
+            <td><span class="stars">★★★★★</span> 4.7</td>
+            <td><span class="stars">★★★★★</span> 4.6</td>
+            <td><span class="stars">★★★★★</span> 4.8</td>
+          </tr>
+          <tr>
+            <td class="product-name">Capacity</td>
+            <td class="winner">5 Quarts</td>
+            <td>1.7 Liters</td>
+            <td class="winner">6 Quarts</td>
+          </tr>
+          <tr>
+            <td class="product-name">Functions</td>
+            <td>4 Cooking Modes</td>
+            <td>6 Temp Presets</td>
+            <td class="winner">7 Appliances in 1</td>
+          </tr>
+          <tr>
+            <td class="product-name">Dishwasher Safe</td>
+            <td class="check">✓</td>
+            <td class="cross">✗</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td class="product-name">Best For</td>
+            <td>Healthy Frying</td>
+            <td>Tea & Coffee</td>
+            <td>Meal Prep</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- AD BANNER 2 -->
+<div class="ad-banner reveal">
+  <div class="ad-slot">
+    <!-- Google AdSense Code Goes Here -->
+    <p>📢 <strong>Ad Space:</strong> Native ad placement for higher CTR. Insert AdSense In-Feed or Display ad code.</p>
+    <p style="font-size:0.8rem; margin-top:0.5rem;">Recommended: Native In-Feed Ad (Responsive)</p>
+  </div>
+</div>
+
+<!-- WHY TRUST -->
+<section id="trust">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Why Trust KitchenWise?</h2>
+      <p>We don't just read Amazon reviews. We buy, test, and use every product in real kitchens.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-icon">🔍</div>
+        <h3>Real Testing</h3>
+        <p>Every product is tested for 30+ days in actual home kitchens. No shortcuts, no guesswork.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">⚖️</div>
+        <h3>Unbiased Picks</h3>
+        <p>No brand pays us for placement. Our opinions are 100% independent and honest.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">💰</div>
+        <h3>Best Value</h3>
+        <p>We find the sweet spot between quality, features, and price. Never overpay again.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">🔄</div>
+        <h3>Weekly Updates</h3>
+        <p>Prices and stock checked daily. We only show deals that are actually available right now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>What Readers Say</h2>
+      <p>Join thousands of home cooks who trust KitchenWise for their kitchen decisions.</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"Saved me $40 on the Ninja Air Fryer and it's genuinely the best purchase I've made this year. Crispy fries in 12 minutes!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div class="author-info">
+            <h4>Sarah M.</h4>
+            <p>Verified Buyer · Austin, TX</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"The comparison table made my decision so easy. Went with the Instant Pot and use it 4 times a week minimum."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div class="author-info">
+            <h4>James K.</h4>
+            <p>Verified Buyer · Toronto, CA</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"Finally a review site that doesn't feel like a sales pitch. Honest pros AND cons. The Cuisinart kettle is perfect."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div class="author-info">
+            <h4>Aisha R.</h4>
+            <p>Verified Buyer · London, UK</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="newsletter">
+  <div class="newsletter-content">
+    <h2>Get Smart Kitchen Tips</h2>
+    <p>Weekly picks, honest reviews, and exclusive Amazon deals delivered to your inbox. No spam, ever.</p>
+    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+      <input type="email" placeholder="Enter your email address" required id="emailInput">
+      <button type="submit" class="btn">Subscribe Free →</button>
+    </form>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:1rem;">🔒 We respect your privacy. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>KitchenWise</h4>
+      <p style="color:rgba(255,255,255,0.7); font-size:0.9rem; line-height:1.6;">Smart reviews for smarter kitchens. We help home cooks find the best gadgets at the best prices.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#products">Top Picks</a>
+      <a href="#compare">Comparisons</a>
+      <a href="#trust">Why Trust Us</a>
+      <a href="#newsletter">Newsletter</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#" onclick="alert('Privacy Policy page coming soon!')">Privacy Policy</a>
+      <a href="#" onclick="alert('Terms of Service page coming soon!')">Terms of Service</a>
+      <a href="#" onclick="alert('Affiliate Disclosure page coming soon!')">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:ammar.qadri30@gmail.com">ammar.qadri30@gmail.com</a>
+      <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; margin-top:1rem;">Built with ❤️ for kitchen lovers everywhere.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 KitchenWise. All rights reserved. | Affiliate disclosure: We earn from qualifying Amazon purchases. | <a href="https://affiliate-program.amazon.com/" target="_blank">Amazon Associates</a></p>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta" id="floatingCta" style="display:none;">
+  <a href="#products" class="btn btn-primary">
+    🔥 Deals
+  </a>
+</div>
+
+<!-- POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup()">×</button>
+    <span class="gift-icon">🎁</span>
+    <h3>Wait! Get Our Free Guide</h3>
+    <p>Subscribe now and get "10 Kitchen Gadgets That Pay for Themselves" — a $9.99 value, yours free.</p>
+    <form onsubmit="handlePopupSubscribe(event)">
+      <input type="email" placeholder="Your email address" required style="width:100%; padding:1rem; border-radius:12px; border:2px solid #e5e7eb; margin-bottom:1rem; font-size:1rem; outline:none;">
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+        Send Me The Free Guide →
+      </button>
+    </form>
+    <p style="font-size:0.8rem; color:var(--text-light); margin-top:1rem;">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+// ===== LOADER =====
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 800);
+});
+
+// ===== PARTICLES =====
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 30; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = Math.random() * 100 + '%';
+  p.style.animationDelay = Math.random() * 15 + 's';
+  p.style.animationDuration = (10 + Math.random() * 10) + 's';
+  p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+  particlesContainer.appendChild(p);
+}
+
+// ===== HEADER SCROLL =====
+const header = document.getElementById('header');
+const floatingCta = document.getElementById('floatingCta');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+    floatingCta.style.display = 'block';
+  } else {
+    header.classList.remove('scrolled');
+    floatingCta.style.display = 'none';
+  }
+  // Progress bar
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  document.getElementById('progress').style.width = (winScroll / height) * 100 + '%';
+});
+
+// ===== SCROLL REVEAL =====
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      // Counter animation
+      const counters = entry.target.querySelectorAll('[data-count]');
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-count');
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+        updateCounter();
+      });
+    }
+  });
+}, observerOptions);
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ===== COUNTDOWN TIMER =====
+function updateCountdown() {
+  const now = new Date();
+  const midnight = new Date();
+  midnight.setHours(24, 0, 0, 0);
+  const diff = midnight - now;
+  const h = Math.floor(diff / (1000 * 60 * 60));
+  const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const s = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById('hours').textContent = String(h).padStart(2, '0');
+  document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+  document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// ===== POPUP =====
+let popupShown = false;
+window.addEventListener('scroll', () => {
+  if (!popupShown && window.scrollY > 800) {
+    setTimeout(() => {
+      document.getElementById('popup').classList.add('show');
+      popupShown = true;
+    }, 1000);
+  }
+});
+function closePopup() {
+  document.getElementById('popup').classList.remove('show');
+}
+
+// ===== NEWSLETTER =====
+function handleSubscribe(e) {
+  e.preventDefault();
+  const email = document.getElementById('emailInput').value;
+  alert('🎉 Welcome to KitchenWise!
+
+We have received your email: ' + email + '
+
+You will start receiving weekly deals and tips soon.
+
+💡 Pro Tip: Add ammar.qadri30@gmail.com to your contacts so our emails don't go to spam.');
+  document.getElementById('emailInput').value = '';
+}
+function handlePopupSubscribe(e) {
+  e.preventDefault();
+  alert('🎁 Your free guide is on its way!
+
+Check your inbox in the next few minutes.
+
+Don't forget to check your spam folder just in case.');
+  closePopup();
+}
+
+// ===== SMOOTH SCROLL FOR ANCHORS =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ===== AFFILIATE LINK TRACKING =====
+document.querySelectorAll('a[href*="amazon"]').forEach(link => {
+  link.addEventListener('click', function() {
+    // You can add analytics tracking here
+    console.log('Affiliate click:', this.href);
+  });
+});
+</script>
+</body>
+</html>
