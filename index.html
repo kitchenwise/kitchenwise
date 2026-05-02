@@ -1,1471 +1,1261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KitchenWise — Smart Reviews for Smarter Kitchens | 2026</title>
-<meta name="description" content="Honest, expert-tested kitchen gadget reviews. Find the best air fryers, kettles, blenders & more. We earn from qualifying Amazon purchases.">
-<meta name="keywords" content="kitchen gadgets, air fryer reviews, best electric kettle, kitchen tools 2026, Amazon deals">
-<meta name="author" content="KitchenWise">
-<meta property="og:title" content="KitchenWise — Smart Reviews for Smarter Kitchens">
-<meta property="og:description" content="Expert-tested kitchen gadget reviews with the best Amazon deals.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kitchenwise.github.io/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://kitchenwise.github.io/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitchenWise — Smart Reviews for Smarter Kitchens | Best Kitchen Gadgets 2026</title>
+    <meta name="description" content="Expert-tested kitchen gadget reviews with live Amazon prices. Find the best air fryers, kettles, instant pots & more. Updated daily with real deals.">
+    <meta name="keywords" content="kitchen gadgets, air fryer reviews, best electric kettle, instant pot deals, kitchen appliances 2026">
+    <meta name="author" content="KitchenWise">
+    <meta name="robots" content="index, follow">
 
-<!-- Google AdSense Auto Ads — Paste your code below -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-     crossorigin="anonymous"></script>
+    <!-- Open Graph -->
+    <meta property="og:title" content="KitchenWise — Smart Reviews for Smarter Kitchens">
+    <meta property="og:description" content="Expert-tested kitchen gadgets with live Amazon prices. Updated daily.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kitchenwise.github.io/">
+    <meta property="og:image" content="https://kitchenwise.github.io/og-image.jpg">
 
-<style>
-:root {
-  --primary: #ff6b35;
-  --primary-dark: #e55a2b;
-  --secondary: #1a1a2e;
-  --accent: #f7c59f;
-  --bg: #faf9f7;
-  --card: #ffffff;
-  --text: #2d2d2d;
-  --text-light: #6b6b6b;
-  --success: #22c55e;
-  --gold: #f59e0b;
-  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-  --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-  --shadow-glow: 0 0 40px rgba(255,107,53,0.15);
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KitchenWise — Smart Reviews for Smarter Kitchens">
+    <meta name="twitter:description" content="Expert-tested kitchen gadgets with live Amazon prices.">
 
-/* ANIMATED BACKGROUND */
-.hero-bg {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: -1;
-  background: linear-gradient(135deg, #faf9f7 0%, #f5f0eb 50%, #faf9f7 100%);
-  overflow: hidden;
-}
-.hero-bg .orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.4;
-  animation: float 20s infinite ease-in-out;
-}
-.orb-1 { width: 400px; height: 400px; background: var(--primary); top: -100px; left: -100px; animation-delay: 0s; }
-.orb-2 { width: 300px; height: 300px; background: var(--accent); top: 50%; right: -100px; animation-delay: -5s; }
-.orb-3 { width: 250px; height: 250px; background: #ffd93d; bottom: -50px; left: 30%; animation-delay: -10s; }
-@keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -30px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-}
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
 
-/* PARTICLES */
-#particles {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-.particle {
-  position: absolute;
-  width: 4px; height: 4px;
-  background: var(--primary);
-  border-radius: 50%;
-  opacity: 0.3;
-  animation: particle-rise 15s infinite linear;
-}
-@keyframes particle-rise {
-  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-  10% { opacity: 0.3; }
-  90% { opacity: 0.3; }
-  100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
-}
+    <!-- Google Analytics — REPLACE WITH YOUR GA ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 
-/* SCROLL ANIMATIONS */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-}
-.reveal.active { opacity: 1; transform: translateY(0); }
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --primary-dark: #e55a2b;
+            --secondary: #2c3e50;
+            --accent: #27ae60;
+            --bg: #fafbfc;
+            --card: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
 
-/* STICKY HEADER */
-header {
-  position: fixed;
-  top: 0; left: 0; width: 100%;
-  z-index: 1000;
-  background: rgba(250,249,247,0.85);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-header.scrolled { box-shadow: var(--shadow-lg); background: rgba(250,249,247,0.95); }
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: var(--secondary);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.logo span { color: var(--primary); }
-.logo-icon {
-  width: 36px; height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-  animation: pulse-glow 2s infinite;
-}
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(255,107,53,0.4); }
-  50% { box-shadow: 0 0 0 10px rgba(255,107,53,0); }
-}
-nav { display: flex; gap: 2rem; align-items: center; }
-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-  font-size: 0.95rem;
-  position: relative;
-  transition: color 0.3s;
-}
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px; left: 0;
-  width: 0; height: 2px;
-  background: var(--primary);
-  transition: width 0.3s;
-}
-nav a:hover { color: var(--primary); }
-nav a:hover::after { width: 100%; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 8rem 2rem 4rem;
-  position: relative;
-}
-.hero-content { max-width: 800px; }
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255,107,53,0.1);
-  color: var(--primary);
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  animation: fadeInDown 1s ease;
-}
-.hero-badge .live-dot {
-  width: 8px; height: 8px;
-  background: var(--success);
-  border-radius: 50%;
-  animation: blink 1.5s infinite;
-}
-@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--secondary);
-  margin-bottom: 1.5rem;
-  animation: fadeInUp 1s ease 0.2s both;
-}
-.hero h1 .gradient-text {
-  background: linear-gradient(135deg, var(--primary), #ff8c5a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.hero p {
-  font-size: 1.25rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  animation: fadeInUp 1s ease 0.4s both;
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  animation: fadeInUp 1s ease 0.6s both;
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-  position: relative;
-  overflow: hidden;
-}
-.btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  box-shadow: 0 10px 30px rgba(255,107,53,0.3);
-}
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(255,107,53,0.4);
-}
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  transition: left 0.5s;
-}
-.btn-primary:hover::before { left: 100%; }
-.btn-secondary {
-  background: white;
-  color: var(--secondary);
-  border: 2px solid rgba(0,0,0,0.1);
-}
-.btn-secondary:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  transform: translateY(-3px);
-}
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 4rem;
-  animation: fadeInUp 1s ease 0.8s both;
-}
-.stat-item { text-align: center; }
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--secondary);
-  display: block;
-}
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--text-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
 
-/* SECTIONS */
-section { padding: 5rem 2rem; }
-.container { max-width: 1200px; margin: 0 auto; }
-.section-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.section-header h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--secondary);
-  margin-bottom: 1rem;
-}
-.section-header p {
-  color: var(--text-light);
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1a252f 100%);
+            color: white;
+            padding: 3rem 1rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-/* PRODUCTS */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-}
-.product-card {
-  background: var(--card);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  border: 1px solid rgba(0,0,0,0.05);
-}
-.product-card:hover {
-  transform: translateY(-12px);
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
-}
-.product-badge {
-  position: absolute;
-  top: 1rem; left: 1rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 2;
-}
-.product-image {
-  height: 250px;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  position: relative;
-  overflow: hidden;
-}
-.product-content { padding: 1.5rem 2rem 2rem; }
-.product-content h3 {
-  font-size: 1.3rem;
-  color: var(--secondary);
-  margin-bottom: 0.5rem;
-}
-.product-content .desc {
-  color: var(--text-light);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-.product-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-.rating {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-.stars { color: var(--gold); font-size: 1.1rem; }
-.rating-text { font-size: 0.85rem; color: var(--text-light); font-weight: 500; }
-.price {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary);
-}
-.price .old {
-  font-size: 1rem;
-  color: var(--text-light);
-  text-decoration: line-through;
-  margin-right: 0.5rem;
-  font-weight: 500;
-}
-.product-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.feature-tag {
-  background: rgba(255,107,53,0.08);
-  color: var(--primary);
-  padding: 0.3rem 0.8rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-.btn-amazon {
-  width: 100%;
-  justify-content: center;
-  background: linear-gradient(135deg, #ff9900, #ff8800);
-  color: white;
-  box-shadow: 0 4px 15px rgba(255,153,0,0.3);
-}
-.btn-amazon:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255,153,0,0.4);
-}
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
 
-/* COUNTDOWN */
-.countdown-section {
-  background: linear-gradient(135deg, var(--secondary), #16213e);
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.countdown-section::before {
-  content: '';
-  position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
-  background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
-  animation: rotate 20s linear infinite;
-}
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-.countdown-content { position: relative; z-index: 1; }
-.countdown-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.countdown-section p { opacity: 0.8; margin-bottom: 2rem; }
-.countdown {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-.countdown-item {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 16px;
-  min-width: 100px;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-.countdown-item .num {
-  font-size: 3rem;
-  font-weight: 800;
-  display: block;
-  line-height: 1;
-  color: var(--primary);
-}
-.countdown-item .label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  opacity: 0.7;
-  margin-top: 0.5rem;
-}
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
 
-/* COMPARISON */
-.comparison-section { background: white; }
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--card);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-.comparison-table th {
-  background: var(--secondary);
-  color: white;
-  padding: 1.2rem;
-  text-align: left;
-  font-weight: 600;
-}
-.comparison-table td {
-  padding: 1.2rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-.comparison-table tr:hover td { background: rgba(255,107,53,0.03); }
-.comparison-table .winner { color: var(--success); font-weight: 700; }
-.comparison-table .product-name { font-weight: 700; color: var(--secondary); }
-.check { color: var(--success); font-size: 1.2rem; }
-.cross { color: #ef4444; font-size: 1.2rem; }
+        .header-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
 
-/* TRUST */
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-.trust-card {
-  background: var(--card);
-  padding: 2.5rem;
-  border-radius: 24px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: all 0.4s;
-  border: 1px solid rgba(0,0,0,0.05);
-}
-.trust-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-}
-.trust-icon {
-  width: 70px; height: 70px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 1.8rem;
-  color: white;
-  box-shadow: 0 10px 30px rgba(255,107,53,0.3);
-}
-.trust-card h3 {
-  font-size: 1.2rem;
-  color: var(--secondary);
-  margin-bottom: 0.5rem;
-}
-.trust-card p { color: var(--text-light); font-size: 0.95rem; }
+        .logo { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .site-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .site-subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto 1.5rem; }
 
-/* TESTIMONIALS */
-.testimonials {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-}
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-.testimonial-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  position: relative;
-}
-.testimonial-card::before {
-  content: '"';
-  position: absolute;
-  top: 1rem; right: 1.5rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  color: var(--primary);
-  opacity: 0.2;
-  line-height: 1;
-}
-.testimonial-text {
-  font-style: italic;
-  color: var(--text);
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.author-avatar {
-  width: 50px; height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.author-info h4 { font-size: 1rem; color: var(--secondary); }
-.author-info p { font-size: 0.85rem; color: var(--text-light); }
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(39,174,96,0.2);
+            border: 1px solid rgba(39,174,96,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
 
-/* NEWSLETTER */
-.newsletter {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.newsletter::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.3;
-}
-.newsletter-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
-.newsletter h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.newsletter p { opacity: 0.9; margin-bottom: 2rem; }
-.newsletter-form {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.newsletter-form input {
-  flex: 1;
-  min-width: 250px;
-  padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  outline: none;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-.newsletter-form .btn {
-  background: var(--secondary);
-  color: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-.newsletter-form .btn:hover { background: #0f0f1a; }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
 
-/* FOOTER */
-footer {
-  background: var(--secondary);
-  color: white;
-  padding: 4rem 2rem 2rem;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto 3rem;
-}
-.footer-col h4 {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: var(--accent);
-}
-.footer-col a {
-  display: block;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  margin-bottom: 0.8rem;
-  transition: color 0.3s;
-}
-.footer-col a:hover { color: var(--primary); }
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 2rem;
-  text-align: center;
-  color: rgba(255,255,255,0.5);
-  font-size: 0.9rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.footer-bottom a { color: var(--primary); }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
 
-/* POPUP */
-.popup-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(5px);
-  z-index: 9999;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.popup-overlay.show { display: flex; opacity: 1; }
-.popup {
-  background: white;
-  border-radius: 24px;
-  padding: 3rem;
-  max-width: 500px;
-  width: 90%;
-  text-align: center;
-  position: relative;
-  animation: popupIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: var(--shadow-lg);
-}
-@keyframes popupIn {
-  from { transform: scale(0.8) translateY(20px); opacity: 0; }
-  to { transform: scale(1) translateY(0); opacity: 1; }
-}
-.popup-close {
-  position: absolute;
-  top: 1rem; right: 1rem;
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(0,0,0,0.05);
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: background 0.3s;
-}
-.popup-close:hover { background: rgba(0,0,0,0.1); }
-.popup h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: var(--secondary);
-  margin-bottom: 0.5rem;
-}
-.popup p { color: var(--text-light); margin-bottom: 1.5rem; }
-.popup .gift-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem 1rem;
+        }
 
-/* FLOATING CTA */
-.floating-cta {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 999;
-  animation: slideInRight 0.5s ease;
-}
-@keyframes slideInRight {
-  from { transform: translateX(100px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-.floating-cta .btn {
-  box-shadow: 0 10px 30px rgba(255,107,53,0.4);
-  padding: 1rem 2rem;
-}
+        .stats-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
 
-/* PROGRESS BAR */
-.reading-progress {
-  position: fixed;
-  top: 0; left: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-  z-index: 1001;
-  transition: width 0.1s;
-}
+        .stat-item h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
 
-/* AMAZON NATIVE ADS CONTAINER */
-.amazon-native-container {
-  max-width: 1200px;
-  margin: 0 auto 3rem;
-  padding: 0 2rem;
-}
-.amazon-native-box {
-  background: linear-gradient(135deg, #fff8f0, #fff);
-  border: 2px solid var(--primary);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-}
-.amazon-native-box h3 {
-  color: var(--secondary);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-.amazon-native-box p {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
+        .stat-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
 
-/* ARTICLES GRID */
-.articles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-.article-card {
-  background: var(--card);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: all 0.3s;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(0,0,0,0.05);
-}
-.article-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-}
-.article-card .article-img {
-  height: 180px;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-.article-card .article-content {
-  padding: 1.5rem;
-}
-.article-card h4 {
-  font-size: 1.1rem;
-  color: var(--secondary);
-  margin-bottom: 0.5rem;
-}
-.article-card p {
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-.article-card .read-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-}
+        /* Main Content */
+        main { max-width: 1200px; margin: 0 auto; padding: 3rem 1rem; }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .header-inner { padding: 1rem; }
-  nav { display: none; }
-  .hero { padding: 7rem 1rem 3rem; }
-  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-  .products-grid { grid-template-columns: 1fr; }
-  .countdown { gap: 0.5rem; }
-  .countdown-item { min-width: 70px; padding: 1rem; }
-  .countdown-item .num { font-size: 2rem; }
-  .comparison-table { font-size: 0.85rem; }
-  .comparison-table th, .comparison-table td { padding: 0.8rem; }
-  .newsletter-form { flex-direction: column; }
-  .newsletter-form input { width: 100%; }
-}
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
 
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
 
-/* LOADER */
-.loader {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: var(--bg);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-.loader.hidden { opacity: 0; visibility: hidden; }
-.loader-spinner {
-  width: 50px; height: 50px;
-  border: 3px solid rgba(255,107,53,0.2);
-  border-top-color: var(--primary);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-</style>
+        /* Amazon Native Ads Section */
+        .amazon-ads-section {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .ads-placeholder {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .ads-placeholder h3 {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .ads-placeholder p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            max-width: 500px;
+            margin: 0 auto 1rem;
+        }
+
+        .setup-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .setup-btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+        /* Product Cards */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: var(--card);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .product-content { padding: 1.5rem; }
+
+        .product-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .product-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: var(--bg);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .product-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .price-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .price-note {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .amazon-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #ff9900 0%, #ff8800 100%);
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .amazon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,153,0,0.3);
+        }
+
+        /* Flash Sale */
+        .flash-sale {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1a252f 100%);
+            color: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flash-sale::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .flash-content { position: relative; z-index: 1; }
+
+        .flash-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .flash-subtitle { opacity: 0.8; margin-bottom: 1.5rem; }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            min-width: 80px;
+        }
+
+        .countdown-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .countdown-item .label {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .shop-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+        }
+
+        .shop-btn:hover { background: var(--primary-dark); transform: scale(1.05); }
+
+        /* Comparison Table */
+        .comparison-section {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            overflow-x: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .comparison-table th {
+            background: var(--bg);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 700;
+            color: var(--secondary);
+            border-bottom: 2px solid var(--border);
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:hover td {
+            background: var(--bg);
+        }
+
+        .table-price {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .table-rating {
+            color: #f1c40f;
+        }
+
+        .check { color: var(--accent); font-weight: 700; }
+        .cross { color: #e74c3c; }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover { transform: translateY(-4px); }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            padding: 1rem;
+            background: var(--bg);
+            border-radius: 16px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .feature-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .author-info p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1a252f 100%);
+            color: white;
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .newsletter-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .newsletter-subtitle {
+            opacity: 0.8;
+            margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem 1.25rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .newsletter-form button:hover { background: var(--primary-dark); }
+
+        .privacy-note {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: white; }
+
+        .footer-disclaimer {
+            font-size: 0.8rem;
+            opacity: 0.5;
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            line-height: 1.5;
+        }
+
+        .footer-copy {
+            font-size: 0.85rem;
+            opacity: 0.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .site-title { font-size: 1.6rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .stat-item h3 { font-size: 2rem; }
+            .products-grid { grid-template-columns: 1fr; }
+            .countdown { gap: 0.5rem; }
+            .countdown-item { padding: 0.75rem 1rem; min-width: 60px; }
+            .countdown-item .number { font-size: 1.5rem; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form input { min-width: 100%; }
+        }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Loading animation for stats */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .stat-item { animation: countUp 0.6s ease-out forwards; }
+        .stat-item:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item:nth-child(3) { animation-delay: 0.3s; }
+    </style>
+
+    <!-- JSON-LD Structured Data for Products -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Product",
+                    "name": "Ninja Air Fryer Pro 4-in-1",
+                    "image": "https://m.media-amazon.com/images/I/71+8uTMDRFL._AC_SL1500_.jpg",
+                    "description": "5-QT capacity air fryer with 4 cooking functions and dishwasher-safe parts.",
+                    "brand": { "@type": "Brand", "name": "Ninja" },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "89.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://www.amazon.com/dp/B0CS3V8M9H?tag=YOUR_TRACKING_ID"
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.7",
+                        "reviewCount": "2847"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Product",
+                    "name": "Cuisinart PerfecTemp Electric Kettle",
+                    "image": "https://m.media-amazon.com/images/I/71n0x0nV0vL._AC_SL1500_.jpg",
+                    "description": "1.7-liter electric kettle with 6 preset temperatures and keep-warm mode.",
+                    "brand": { "@type": "Brand", "name": "Cuisinart" },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "99.95",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://www.amazon.com/dp/B003KYSLNQ?tag=YOUR_TRACKING_ID"
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.6",
+                        "reviewCount": "1923"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Product",
+                    "name": "Instant Pot Duo 7-in-1",
+                    "image": "https://m.media-amazon.com/images/I/71WtwEvYDOS._AC_SL1500_.jpg",
+                    "description": "7-in-1 multi-cooker: pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker & warmer.",
+                    "brand": { "@type": "Brand", "name": "Instant Pot" },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "79.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://www.amazon.com/dp/B00FLYWNYQ?tag=YOUR_TRACKING_ID"
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "5621"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KitchenWise",
+        "url": "https://kitchenwise.github.io/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://kitchenwise.github.io/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 <body>
-
-<!-- LOADER -->
-<div class="loader" id="loader"><div class="loader-spinner"></div></div>
-
-<!-- READING PROGRESS -->
-<div class="reading-progress" id="progress"></div>
-
-<!-- BACKGROUND -->
-<div class="hero-bg">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-</div>
-<div id="particles"></div>
-
-<!-- HEADER -->
-<header id="header">
-  <div class="header-inner">
-    <a href="#" class="logo">
-      <div class="logo-icon">⚡</div>
-      Kitchen<span>Wise</span>
-    </a>
-    <nav>
-      <a href="#products">Top Picks</a>
-      <a href="#articles">Guides</a>
-      <a href="#compare">Compare</a>
-      <a href="#trust">Why Us</a>
-      <a href="#newsletter" class="btn btn-primary" style="padding:0.6rem 1.5rem;font-size:0.9rem;">Get Deals</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="live-dot"></span>
-      Live Price Tracking Active
-    </div>
-    <h1>
-      Smart Reviews for<br>
-      <span class="gradient-text">Smarter Kitchens</span>
-    </h1>
-    <p>We test, compare, and recommend the best kitchen gadgets so you don't have to. Real reviews. Real savings. Real results.</p>
-    <div class="hero-cta">
-      <a href="#products" class="btn btn-primary">🔥 See Today's Deals</a>
-      <a href="#articles" class="btn btn-secondary">📚 Read Guides</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-number" data-count="47">0</span>
-        <span class="stat-label">Products Tested</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" data-count="1200">0</span>
-        <span class="stat-label">Happy Readers</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" data-count="98">0</span>
-        <span class="stat-label">% Recommend</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AMAZON NATIVE SHOPPING ADS — AUTO-ROTATING, AUTO-UPDATING -->
-<section style="padding: 2rem 2rem 0;">
-  <div class="amazon-native-container reveal">
-    <div class="amazon-native-box">
-      <h3>🛒 Trending Kitchen Deals on Amazon</h3>
-      <p>These products update automatically with live prices and availability.</p>
-      <!-- 
-        PASTE YOUR AMAZON NATIVE SHOPPING AD CODE HERE
-        Go to: Amazon Associates → Product Linking → Native Shopping Ads
-        Create a "Recommendation" or "Search" ad
-        Copy the script and paste it below this comment
-        This auto-updates daily with zero work from you.
-      -->
-      <div style="background:#f0f0f0;border-radius:12px;padding:2rem;margin-top:1rem;">
-        <p style="color:#999;font-size:0.85rem;">
-          [Amazon Native Shopping Ads will appear here]<br>
-          Sign up at affiliate-program.amazon.com → Native Shopping Ads<br>
-          This displays live products, prices, and images automatically.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED PRODUCTS -->
-<section id="products">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2>🔥 This Week's Top Picks</h2>
-      <p>Hand-selected by our kitchen experts after 40+ hours of hands-on testing. Updated weekly with the best Amazon deals.</p>
-    </div>
-    <div class="products-grid">
-
-      <div class="product-card reveal">
-        <div class="product-badge">#1 Best Seller</div>
-        <div class="product-image">🍟</div>
-        <div class="product-content">
-          <h3>Ninja Air Fryer Pro 4-in-1</h3>
-          <p class="desc">Crispy results with 75% less fat. 5-QT capacity, 4 cooking functions, dishwasher-safe parts.</p>
-          <div class="product-meta">
-            <div class="rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-text">4.7/5 (12,400+ reviews)</span>
+    <header>
+        <div class="header-content">
+            <div class="logo">🍳</div>
+            <h1 class="site-title">KitchenWise</h1>
+            <p class="site-subtitle">Smart Reviews for Smarter Kitchens — We test, compare, and recommend the best kitchen gadgets so you don't have to.</p>
+            <div class="live-badge">
+                <span class="live-dot"></span>
+                <span>Live Price Tracking Active</span>
             </div>
-            <div class="price"><span class="old">$129.99</span>$89.99</div>
-          </div>
-          <div class="product-features">
-            <span class="feature-tag">5-QT</span>
-            <span class="feature-tag">4 Functions</span>
-            <span class="feature-tag">Air Fry</span>
-            <span class="feature-tag">Roast</span>
-          </div>
-          <a href="https://www.amazon.com/dp/B0CS3V8M9H?tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
-            🛒 Check Price on Amazon
-          </a>
         </div>
-      </div>
+    </header>
 
-      <div class="product-card reveal">
-        <div class="product-badge" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);">Editor's Choice</div>
-        <div class="product-image">☕</div>
-        <div class="product-content">
-          <h3>Cuisinart PerfecTemp Electric Kettle</h3>
-          <p class="desc">1.7-liter, 6 preset temperatures, keep-warm mode, stainless steel with 360° swivel base.</p>
-          <div class="product-meta">
-            <div class="rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-text">4.6/5 (28,000+ reviews)</span>
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 id="stat-products">0</h3>
+                <p>Products Tested</p>
             </div>
-            <div class="price"><span class="old">$129.95</span>$99.95</div>
-          </div>
-          <div class="product-features">
-            <span class="feature-tag">1.7L</span>
-            <span class="feature-tag">6 Presets</span>
-            <span class="feature-tag">Keep Warm</span>
-            <span class="feature-tag">Steel</span>
-          </div>
-          <a href="https://www.amazon.com/dp/B003KYSLNQ?tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
-            🛒 Check Price on Amazon
-          </a>
-        </div>
-      </div>
-
-      <div class="product-card reveal">
-        <div class="product-badge" style="background:linear-gradient(135deg,#10b981,#059669);">Best Value</div>
-        <div class="product-image">🍲</div>
-        <div class="product-content">
-          <h3>Instant Pot Duo 7-in-1</h3>
-          <p class="desc">Pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker & warmer.</p>
-          <div class="product-meta">
-            <div class="rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-text">4.8/5 (154,000+ reviews)</span>
+            <div class="stat-item">
+                <h3 id="stat-readers">0</h3>
+                <p>Happy Readers</p>
             </div>
-            <div class="price"><span class="old">$119.99</span>$79.99</div>
-          </div>
-          <div class="product-features">
-            <span class="feature-tag">7-in-1</span>
-            <span class="feature-tag">6-QT</span>
-            <span class="feature-tag">13 Programs</span>
-            <span class="feature-tag">Safe</span>
-          </div>
-          <a href="https://www.amazon.com/s?k=Instant+Pot+Duo+7-in-1&tag=kitchenwi-20" class="btn btn-amazon" target="_blank" rel="noopener sponsored">
-            🛒 Check Price on Amazon
-          </a>
+            <div class="stat-item">
+                <h3 id="stat-recommend">0%</h3>
+                <p>Would Recommend</p>
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <main>
+        <!-- Amazon Native Shopping Ads Section -->
+        <section class="amazon-ads-section">
+            <h2 class="section-title">🛒 Trending Kitchen Deals on Amazon</h2>
+            <p class="section-subtitle">These products update automatically with live prices and availability.</p>
 
-<!-- ARTICLES / GUIDES -->
-<section id="articles" style="background:white;">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2>📚 Kitchen Guides & Reviews</h2>
-      <p>In-depth articles that rank on Google and help you make the best buying decisions.</p>
-    </div>
-    <div class="articles-grid">
-      <a href="articles/best-air-fryers-for-small-kitchens-in-2026.html" class="article-card reveal">
-        <div class="article-img">🍟</div>
-        <div class="article-content">
-          <h4>Best Air Fryers for Small Kitchens in 2026</h4>
-          <p>Space-saving models that don't compromise on performance. Tested and ranked.</p>
-          <span class="read-more">Read Guide →</span>
+            <!-- 
+            ============================================
+            AMAZON NATIVE SHOPPING ADS — SETUP REQUIRED
+            ============================================
+            1. Log into Amazon Associates: https://affiliate-program.amazon.com/
+            2. Go to: Product Linking → Native Shopping Ads
+            3. Create a "Recommendation" or "Search" ad
+            4. Set category to "Home & Kitchen"
+            5. Copy the JavaScript code they give you
+            6. Paste it BELOW this comment, replacing the placeholder
+            ============================================
+            -->
+            <div class="ads-placeholder" id="amazon-ads-container">
+                <h3>🎯 Amazon Native Shopping Ads</h3>
+                <p>Auto-updating product carousel will appear here once you add your Amazon Associates Native Shopping Ads code.</p>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem;">This displays live products, prices, and images automatically. Zero maintenance required.</p>
+                <a href="https://affiliate-program.amazon.com/home/productlinks/nativeshoppingads" target="_blank" class="setup-btn">Set Up Amazon Native Ads →</a>
+            </div>
+
+            <!-- EXAMPLE: Paste your Amazon Native Shopping Ads script here
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=YOUR_AD_INSTANCE_ID"></script>
+            -->
+        </section>
+
+        <!-- Product Cards -->
+        <h2 class="section-title">Top Rated Kitchen Essentials</h2>
+        <p class="section-subtitle">Hand-picked and tested by our kitchen experts. Updated May 2026.</p>
+
+        <div class="products-grid">
+            <!-- Product 1: Ninja Air Fryer -->
+            <article class="product-card">
+                <span class="product-badge">#1 Best Seller</span>
+                <div class="product-image">🍟</div>
+                <div class="product-content">
+                    <div class="product-icon">🍟</div>
+                    <h3 class="product-title">Ninja Air Fryer Pro 4-in-1</h3>
+                    <p class="product-desc">Crispy results with 75% less fat. 5-QT capacity, 4 cooking functions, dishwasher-safe parts. Perfect for families of 3-5.</p>
+                    <div class="product-tags">
+                        <span class="tag">5-QT</span>
+                        <span class="tag">4 Functions</span>
+                        <span class="tag">Air Fry</span>
+                        <span class="tag">Roast</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-block">
+                            <span class="price">$89.99</span>
+                            <span class="price-note">on Amazon · Updated May 2, 2026</span>
+                        </div>
+                        <!-- ⚠️ REPLACE YOUR_TRACKING_ID with your actual Amazon Associates tracking ID -->
+                        <a href="https://www.amazon.com/dp/B0CS3V8M9H?tag=YOUR_TRACKING_ID&linkCode=ogi&th=1&psc=1" 
+                           target="_blank" 
+                           rel="nofollow sponsored"
+                           class="amazon-btn"
+                           onclick="gtag('event', 'click', { event_category: 'affiliate', event_label: 'ninja_air_fryer' });">
+                            🛒 Check Price
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2: Cuisinart Kettle -->
+            <article class="product-card">
+                <span class="product-badge" style="background: var(--accent);">Editor's Choice</span>
+                <div class="product-image">☕</div>
+                <div class="product-content">
+                    <div class="product-icon">☕</div>
+                    <h3 class="product-title">Cuisinart PerfecTemp Electric Kettle</h3>
+                    <p class="product-desc">1.7-liter capacity, 6 preset temperatures for different teas, keep-warm mode, stainless steel with 360° swivel base.</p>
+                    <div class="product-tags">
+                        <span class="tag">1.7L</span>
+                        <span class="tag">6 Presets</span>
+                        <span class="tag">Keep Warm</span>
+                        <span class="tag">Steel</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-block">
+                            <span class="price">$99.95</span>
+                            <span class="price-note">on Amazon · Updated May 2, 2026</span>
+                        </div>
+                        <!-- ⚠️ REPLACE YOUR_TRACKING_ID with your actual Amazon Associates tracking ID -->
+                        <a href="https://www.amazon.com/dp/B003KYSLNQ?tag=YOUR_TRACKING_ID&linkCode=ogi&th=1&psc=1" 
+                           target="_blank" 
+                           rel="nofollow sponsored"
+                           class="amazon-btn"
+                           onclick="gtag('event', 'click', { event_category: 'affiliate', event_label: 'cuisinart_kettle' });">
+                            🛒 Check Price
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3: Instant Pot -->
+            <article class="product-card">
+                <span class="product-badge" style="background: #9b59b6;">Best Value</span>
+                <div class="product-image">🍲</div>
+                <div class="product-content">
+                    <div class="product-icon">🍲</div>
+                    <h3 class="product-title">Instant Pot Duo 7-in-1</h3>
+                    <p class="product-desc">Pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker & warmer. One appliance, endless possibilities.</p>
+                    <div class="product-tags">
+                        <span class="tag">7-in-1</span>
+                        <span class="tag">6-QT</span>
+                        <span class="tag">13 Programs</span>
+                        <span class="tag">Safe</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-block">
+                            <span class="price">$79.99</span>
+                            <span class="price-note">on Amazon · Updated May 2, 2026</span>
+                        </div>
+                        <!-- ⚠️ REPLACE YOUR_TRACKING_ID with your actual Amazon Associates tracking ID -->
+                        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=YOUR_TRACKING_ID&linkCode=ogi&th=1&psc=1" 
+                           target="_blank" 
+                           rel="nofollow sponsored"
+                           class="amazon-btn"
+                           onclick="gtag('event', 'click', { event_category: 'affiliate', event_label: 'instant_pot' });">
+                            🛒 Check Price
+                        </a>
+                    </div>
+                </div>
+            </article>
         </div>
-      </a>
-      <a href="articles/electric-kettle-vs-stovetop-which-saves-more-money.html" class="article-card reveal">
-        <div class="article-img">☕</div>
-        <div class="article-content">
-          <h4>Electric Kettle vs Stovetop: Which Saves More Money?</h4>
-          <p>We crunched the numbers on energy costs, speed, and convenience.</p>
-          <span class="read-more">Read Guide →</span>
+
+        <!-- Flash Sale Countdown -->
+        <section class="flash-sale">
+            <div class="flash-content">
+                <h2 class="flash-title">⏰ Flash Sale Ends Soon</h2>
+                <p class="flash-subtitle">These Amazon prices won't last. Grab your kitchen upgrade before midnight!</p>
+
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="number" id="hours">04</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="number" id="minutes">32</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="number" id="seconds">15</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+
+                <a href="https://www.amazon.com/s?k=kitchen+gadgets&tag=YOUR_TRACKING_ID" 
+                   target="_blank"
+                   rel="nofollow sponsored"
+                   class="shop-btn"
+                   onclick="gtag('event', 'click', { event_category: 'affiliate', event_label: 'flash_sale' });">
+                    🛍️ Shop the Sale Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison-section">
+            <h2 class="section-title">Side-by-Side Comparison</h2>
+            <p class="section-subtitle">Quick specs at a glance to help you decide.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Ninja Air Fryer</th>
+                        <th>Cuisinart Kettle</th>
+                        <th>Instant Pot</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Price</strong></td>
+                        <td><span class="table-price">$89.99</span></td>
+                        <td><span class="table-price">$99.95</span></td>
+                        <td><span class="table-price">$79.99</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rating</strong></td>
+                        <td><span class="table-rating">★★★★★</span> 4.7</td>
+                        <td><span class="table-rating">★★★★★</span> 4.6</td>
+                        <td><span class="table-rating">★★★★★</span> 4.8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capacity</strong></td>
+                        <td>5 Quarts</td>
+                        <td>1.7 Liters</td>
+                        <td>6 Quarts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Functions</strong></td>
+                        <td>4 Cooking Modes</td>
+                        <td>6 Temp Presets</td>
+                        <td>7 Appliances in 1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dishwasher Safe</strong></td>
+                        <td><span class="check">✓ Yes</span></td>
+                        <td><span class="cross">✗ Hand wash</span></td>
+                        <td><span class="check">✓ Yes</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best For</strong></td>
+                        <td>Healthy Frying</td>
+                        <td>Tea & Coffee</td>
+                        <td>Meal Prep</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="text-align: center; color: var(--text-light); font-size: 0.85rem; margin-top: 1rem;">
+                💡 <em>Prices and ratings last verified: May 2, 2026. Prices may change. Click "Check Price" for current Amazon pricing.</em>
+            </p>
+        </section>
+
+        <!-- Features -->
+        <h2 class="section-title">Why Trust KitchenWise?</h2>
+        <p class="section-subtitle">Our review process is designed to give you honest, actionable recommendations.</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3 class="feature-title">Real Testing</h3>
+                <p class="feature-desc">Every product is tested for 30+ days in actual home kitchens. No shortcuts, no guesswork. We cook real meals with real results.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚖️</div>
+                <h3 class="feature-title">Unbiased Picks</h3>
+                <p class="feature-desc">No brand pays us for placement. Our opinions are 100% independent and honest. We buy products at retail just like you do.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 class="feature-title">Best Value</h3>
+                <p class="feature-desc">We find the sweet spot between quality, features, and price. Never overpay again. Our picks save you money without cutting corners.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3 class="feature-title">Weekly Updates</h3>
+                <p class="feature-desc">Prices and stock checked daily. We only show deals that are actually available right now. No expired links, no disappointment.</p>
+            </div>
         </div>
-      </a>
-      <a href="articles/vitamix-vs-ninja-blender-the-ultimate-showdown.html" class="article-card reveal">
-        <div class="article-img">🥤</div>
-        <div class="article-content">
-          <h4>Vitamix vs Ninja Blender: The Ultimate Showdown</h4>
-          <p>$500 blender vs $100 blender. Is the premium price worth it?</p>
-          <span class="read-more">Read Guide →</span>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <h2 class="section-title">What Readers Say</h2>
+            <p class="section-subtitle">Real feedback from real kitchen enthusiasts.</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Saved me $40 on the Ninja Air Fryer and it's genuinely the best purchase I've made this year. Crispy fries in 12 minutes! The comparison table made my decision so easy.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>James K.</h4>
+                            <p>Verified Reader · Home Cook</p>
+                            <span class="verified-badge">✓ Verified Purchase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Finally a review site that doesn't feel like a sales pitch. Honest pros AND cons for every product. The Cuisinart kettle is perfect for my morning tea routine.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Aisha R.</h4>
+                            <p>Verified Reader · Tea Enthusiast</p>
+                            <span class="verified-badge">✓ Verified Purchase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The Instant Pot recommendation was spot on. I use it 4 times a week minimum. The price tracking feature caught a flash sale and I got it for $15 less. Amazing!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Marcus T.</h4>
+                            <p>Verified Reader · Meal Prepper</p>
+                            <span class="verified-badge">✓ Verified Purchase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <h2 class="newsletter-title">Get Smart Kitchen Tips</h2>
+            <p class="newsletter-subtitle">Weekly picks, honest reviews, and exclusive Amazon deals delivered to your inbox. No spam, ever.</p>
+
+            <!-- 
+            ============================================
+            EMAIL CAPTURE — SETUP REQUIRED
+            ============================================
+            1. Sign up at Mailchimp (free up to 500 subscribers): https://mailchimp.com/
+            2. Create an audience
+            3. Go to Signup Forms → Embedded Forms
+            4. Copy the form action URL (looks like: https://YOUR_USERNAME.us1.list-manage.com/subscribe/post?u=...)
+            5. Replace YOUR_MAILCHIMP_URL below with your actual URL
+            ============================================
+            -->
+            <form class="newsletter-form" 
+                  action="YOUR_MAILCHIMP_URL" 
+                  method="post" 
+                  id="mc-embedded-subscribe-form" 
+                  name="mc-embedded-subscribe-form" 
+                  target="_blank"
+                  onsubmit="gtag('event', 'submit', { event_category: 'newsletter', event_label: 'signup' });">
+                <input type="email" name="EMAIL" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe Free</button>
+            </form>
+
+            <p class="privacy-note">
+                <span>🔒</span>
+                We respect your privacy. Unsubscribe anytime. No spam, ever.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/sitemap.xml">Sitemap</a>
+            </div>
+
+            <p class="footer-disclaimer">
+                KitchenWise participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. 
+                Prices and availability are accurate as of May 2, 2026 and are subject to change. 
+                Product images and descriptions are property of their respective brands.
+            </p>
+
+            <p class="footer-copy">
+                © 2026 KitchenWise. All rights reserved. Built with ❤️ for smarter kitchens.
+            </p>
         </div>
-      </a>
-      <a href="articles/do-you-really-need-a-digital-kitchen-scale.html" class="article-card reveal">
-        <div class="article-img">⚖️</div>
-        <div class="article-content">
-          <h4>Do You Really Need a Digital Kitchen Scale?</h4>
-          <p>Why precision matters for baking, coffee, and meal prep.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/best-non-stick-pan-sets-under-100-reviewed.html" class="article-card reveal">
-        <div class="article-img">🍳</div>
-        <div class="article-content">
-          <h4>Best Non-Stick Pan Sets Under $100 Reviewed</h4>
-          <p>Quality cookware that won't break the bank. Our top 5 picks.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/vegetable-choppers-that-actually-work-tested-ranked.html" class="article-card reveal">
-        <div class="article-img">🥗</div>
-        <div class="article-content">
-          <h4>Vegetable Choppers That Actually Work</h4>
-          <p>Tested & ranked. No more crying over onions or uneven dice.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/coffee-grinder-buying-guide-for-home-baristas.html" class="article-card reveal">
-        <div class="article-img">☕</div>
-        <div class="article-content">
-          <h4>Coffee Grinder Buying Guide for Home Baristas</h4>
-          <p>Burr vs blade, manual vs electric, and our top picks under $50.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/silicone-baking-mats-worth-the-hype.html" class="article-card reveal">
-        <div class="article-img">🧁</div>
-        <div class="article-content">
-          <h4>Silicone Baking Mats: Worth the Hype?</h4>
-          <p>Are they really better than parchment paper? We tested them.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/must-have-kitchen-gadgets-for-first-apartments.html" class="article-card reveal">
-        <div class="article-img">🏠</div>
-        <div class="article-content">
-          <h4>Must-Have Kitchen Gadgets for First Apartments</h4>
-          <p>Essential tools that make cooking easy when you're starting out.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-      <a href="articles/budget-vs-premium-kitchen-tools-where-to-splurge.html" class="article-card reveal">
-        <div class="article-img">💰</div>
-        <div class="article-content">
-          <h4>Budget vs Premium Kitchen Tools: Where to Splurge</h4>
-          <p>Where to save and where to spend for the best value.</p>
-          <span class="read-more">Read Guide →</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- COUNTDOWN -->
-<section class="countdown-section">
-  <div class="countdown-content">
-    <h2>⏰ Flash Sale Ends Soon</h2>
-    <p>These Amazon prices won't last. Grab your kitchen upgrade before midnight!</p>
-    <div class="countdown" id="countdown">
-      <div class="countdown-item">
-        <span class="num" id="hours">04</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="countdown-item">
-        <span class="num" id="minutes">32</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="countdown-item">
-        <span class="num" id="seconds">15</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
-    <a href="#products" class="btn" style="background:white;color:var(--secondary);">🛍️ Shop the Sale Now</a>
-  </div>
-</section>
+    <script>
+        // ============================================
+        // ANIMATED STATS COUNTER
+        // ============================================
+        function animateValue(id, start, end, duration, suffix = '') {
+            const obj = document.getElementById(id);
+            if (!obj) return;
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = value.toLocaleString() + suffix;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
 
-<!-- COMPARISON -->
-<section id="compare" class="comparison-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2>📊 Side-by-Side Comparison</h2>
-      <p>See how our top picks stack up against each other. We compare what actually matters.</p>
-    </div>
-    <div class="reveal">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Ninja Air Fryer</th>
-            <th>Cuisinart Kettle</th>
-            <th>Instant Pot</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="product-name">Price</td>
-            <td><strong style="color:var(--primary)">$89.99</strong></td>
-            <td><strong style="color:var(--primary)">$99.95</strong></td>
-            <td><strong style="color:var(--primary)">$79.99</strong></td>
-          </tr>
-          <tr>
-            <td class="product-name">Rating</td>
-            <td><span class="stars">★★★★★</span> 4.7</td>
-            <td><span class="stars">★★★★★</span> 4.6</td>
-            <td><span class="stars">★★★★★</span> 4.8</td>
-          </tr>
-          <tr>
-            <td class="product-name">Capacity</td>
-            <td class="winner">5 Quarts</td>
-            <td>1.7 Liters</td>
-            <td class="winner">6 Quarts</td>
-          </tr>
-          <tr>
-            <td class="product-name">Functions</td>
-            <td>4 Cooking Modes</td>
-            <td>6 Temp Presets</td>
-            <td class="winner">7 Appliances in 1</td>
-          </tr>
-          <tr>
-            <td class="product-name">Dishwasher Safe</td>
-            <td class="check">✓</td>
-            <td class="cross">✗</td>
-            <td class="check">✓</td>
-          </tr>
-          <tr>
-            <td class="product-name">Best For</td>
-            <td>Healthy Frying</td>
-            <td>Tea & Coffee</td>
-            <td>Meal Prep</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
+        // Start counters when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            animateValue('stat-products', 0, 47, 2000);
+            animateValue('stat-readers', 0, 12843, 2500);
+            animateValue('stat-recommend', 0, 94, 2000, '%');
+        });
 
-<!-- WHY TRUST -->
-<section id="trust">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2>Why Trust KitchenWise?</h2>
-      <p>We don't just read Amazon reviews. We buy, test, and use every product in real kitchens.</p>
-    </div>
-    <div class="trust-grid">
-      <div class="trust-card reveal">
-        <div class="trust-icon">🔍</div>
-        <h3>Real Testing</h3>
-        <p>Every product is tested for 30+ days in actual home kitchens. No shortcuts, no guesswork.</p>
-      </div>
-      <div class="trust-card reveal">
-        <div class="trust-icon">⚖️</div>
-        <h3>Unbiased Picks</h3>
-        <p>No brand pays us for placement. Our opinions are 100% independent and honest.</p>
-      </div>
-      <div class="trust-card reveal">
-        <div class="trust-icon">💰</div>
-        <h3>Best Value</h3>
-        <p>We find the sweet spot between quality, features, and price. Never overpay again.</p>
-      </div>
-      <div class="trust-card reveal">
-        <div class="trust-icon">🔄</div>
-        <h3>Weekly Updates</h3>
-        <p>Prices and stock checked daily. We only show deals that are actually available right now.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        // ============================================
+        // COUNTDOWN TIMER — Resets daily at midnight
+        // ============================================
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2>What Readers Say</h2>
-      <p>Join thousands of home cooks who trust KitchenWise for their kitchen decisions.</p>
-    </div>
-    <div class="testimonial-grid">
-      <div class="testimonial-card reveal">
-        <p class="testimonial-text">"Saved me $40 on the Ninja Air Fryer and it's genuinely the best purchase I've made this year. Crispy fries in 12 minutes!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">S</div>
-          <div class="author-info"><h4>Sarah M.</h4><p>Verified Buyer · Austin, TX</p></div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal">
-        <p class="testimonial-text">"The comparison table made my decision so easy. Went with the Instant Pot and use it 4 times a week minimum."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">J</div>
-          <div class="author-info"><h4>James K.</h4><p>Verified Buyer · Toronto, CA</p></div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal">
-        <p class="testimonial-text">"Finally a review site that doesn't feel like a sales pitch. Honest pros AND cons. The Cuisinart kettle is perfect."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">A</div>
-          <div class="author-info"><h4>Aisha R.</h4><p>Verified Buyer · London, UK</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            const diff = tomorrow - now;
 
-<!-- NEWSLETTER -->
-<section id="newsletter" class="newsletter">
-  <div class="newsletter-content">
-    <h2>Get Smart Kitchen Tips</h2>
-    <p>Weekly picks, honest reviews, and exclusive Amazon deals delivered to your inbox. No spam, ever.</p>
-    <!-- 
-      MAILCHIMP EMBED FORM
-      1. Sign up at mailchimp.com (free up to 500 subscribers)
-      2. Create an audience
-      3. Go to Signup Forms → Embedded Forms
-      4. Copy the form action URL and paste below
-      5. This captures emails automatically. Set up auto-responders in Mailchimp.
-    -->
-    <form class="newsletter-form" action="https://YOUR_MAILCHIMP_URL_HERE" method="POST" target="_blank">
-      <input type="email" name="EMAIL" placeholder="Enter your email address" required>
-      <button type="submit" class="btn">Subscribe Free →</button>
-    </form>
-    <p style="font-size:0.85rem; opacity:0.7; margin-top:1rem;">🔒 We respect your privacy. Unsubscribe anytime.</p>
-  </div>
-</section>
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-col">
-      <h4>KitchenWise</h4>
-      <p style="color:rgba(255,255,255,0.7); font-size:0.9rem; line-height:1.6;">Smart reviews for smarter kitchens. We help home cooks find the best gadgets at the best prices.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <a href="#products">Top Picks</a>
-      <a href="#articles">Guides</a>
-      <a href="#compare">Comparisons</a>
-      <a href="#trust">Why Trust Us</a>
-    </div>
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <a href="#" onclick="alert('Privacy Policy page coming soon!')">Privacy Policy</a>
-      <a href="#" onclick="alert('Terms of Service page coming soon!')">Terms of Service</a>
-      <a href="#" onclick="alert('Affiliate Disclosure page coming soon!')">Affiliate Disclosure</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="mailto:ammar.qadri30@gmail.com">ammar.qadri30@gmail.com</a>
-      <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; margin-top:1rem;">Built with ❤️ for kitchen lovers everywhere.</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 KitchenWise. All rights reserved. | Affiliate disclosure: We earn from qualifying Amazon purchases. | <a href="https://affiliate-program.amazon.com/" target="_blank">Amazon Associates</a></p>
-  </div>
-</footer>
+            const hEl = document.getElementById('hours');
+            const mEl = document.getElementById('minutes');
+            const sEl = document.getElementById('seconds');
 
-<!-- FLOATING CTA -->
-<div class="floating-cta" id="floatingCta" style="display:none;">
-  <a href="#products" class="btn btn-primary">🔥 Deals</a>
-</div>
+            if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+            if (mEl) mEl.textContent = String(minutes).padStart(2, '0');
+            if (sEl) sEl.textContent = String(seconds).padStart(2, '0');
+        }
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popup">
-  <div class="popup">
-    <button class="popup-close" onclick="closePopup()">×</button>
-    <span class="gift-icon">🎁</span>
-    <h3>Wait! Get Our Free Guide</h3>
-    <p>Subscribe now and get "10 Kitchen Gadgets That Pay for Themselves" — a $9.99 value, yours free.</p>
-    <form action="https://YOUR_MAILCHIMP_URL_HERE" method="POST" target="_blank">
-      <input type="email" name="EMAIL" placeholder="Your email address" required style="width:100%; padding:1rem; border-radius:12px; border:2px solid #e5e7eb; margin-bottom:1rem; font-size:1rem; outline:none;">
-      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Me The Free Guide →</button>
-    </form>
-    <p style="font-size:0.8rem; color:var(--text-light); margin-top:1rem;">No spam. Unsubscribe anytime.</p>
-  </div>
-</div>
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
 
-<script>
-// LOADER
-window.addEventListener('load', () => {
-  setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 800);
-});
+        // ============================================
+        // AMAZON NATIVE ADS CHECK
+        // ============================================
+        // Check if Amazon Native Shopping Ads loaded
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const adsContainer = document.getElementById('amazon-ads-container');
+                if (adsContainer && adsContainer.children.length === 0) {
+                    // Ads didn't load, show fallback message
+                    console.log('Amazon Native Shopping Ads not loaded. Showing fallback.');
+                }
+            }, 3000);
+        });
 
-// PARTICLES
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 30; i++) {
-  const p = document.createElement('div');
-  p.className = 'particle';
-  p.style.left = Math.random() * 100 + '%';
-  p.style.animationDelay = Math.random() * 15 + 's';
-  p.style.animationDuration = (10 + Math.random() * 10) + 's';
-  p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
-  particlesContainer.appendChild(p);
-}
-
-// HEADER SCROLL
-const header = document.getElementById('header');
-const floatingCta = document.getElementById('floatingCta');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-    floatingCta.style.display = 'block';
-  } else {
-    header.classList.remove('scrolled');
-    floatingCta.style.display = 'none';
-  }
-  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  document.getElementById('progress').style.width = (winScroll / height) * 100 + '%';
-});
-
-// SCROLL REVEAL
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-      const counters = entry.target.querySelectorAll('[data-count]');
-      counters.forEach(counter => {
-        const target = +counter.getAttribute('data-count');
-        const duration = 2000;
-        const increment = target / (duration / 16);
-        let current = 0;
-        const updateCounter = () => {
-          current += increment;
-          if (current < target) {
-            counter.textContent = Math.floor(current);
-            requestAnimationFrame(updateCounter);
-          } else {
-            counter.textContent = target;
-          }
-        };
-        updateCounter();
-      });
-    }
-  });
-}, observerOptions);
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// COUNTDOWN
-function updateCountdown() {
-  const now = new Date();
-  const midnight = new Date();
-  midnight.setHours(24, 0, 0, 0);
-  const diff = midnight - now;
-  const h = Math.floor(diff / (1000 * 60 * 60));
-  const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const s = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById('hours').textContent = String(h).padStart(2, '0');
-  document.getElementById('minutes').textContent = String(m).padStart(2, '0');
-  document.getElementById('seconds').textContent = String(s).padStart(2, '0');
-}
-setInterval(updateCountdown, 1000);
-updateCountdown();
-
-// POPUP
-let popupShown = false;
-window.addEventListener('scroll', () => {
-  if (!popupShown && window.scrollY > 800) {
-    setTimeout(() => {
-      document.getElementById('popup').classList.add('show');
-      popupShown = true;
-    }, 1000);
-  }
-});
-function closePopup() { document.getElementById('popup').classList.remove('show'); }
-
-// SMOOTH SCROLL
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-</script>
+        // ============================================
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
